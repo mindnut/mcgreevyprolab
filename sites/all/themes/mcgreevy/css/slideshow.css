@@ -1,0 +1,81 @@
+.homepage_slider {
+background: url("../images/slider_bg.png") 0 100% no-repeat;
+
+}
+
+#views_slideshow_controls_text_homepage_slideshow-block {
+	    /* needed for my specific layout*/
+	position:absolute;
+	top:180px;
+	           /* adjust as necessary to position your image controls vertically  
+    // width:960px; use the width of your slideshow if you dont mind a non-clickable "dead-spot" in your slideshow*/
+                     /* other wise use the width of your arrow image*/
+	z-index: 5;           /* adjust as needed to keep your image controls "on top" of your slideshow*/
+}
+#views_slideshow_controls_text_homepage_slideshow-block a{
+	//color:#39f;
+	display: inline-block;        /* so images are on the same line*/
+	height:45px;                   /* your arrow image height*/
+	margin:0 10px;                /* to adjust the horizontal spacing of your image controls*/
+	outline:none;                     /* disable ghost text outline */
+	text-indent: -9999px;         /* hide the default text*/
+	width:45px;                         /* your arrow image width*/
+}
+/* disable ghost text outline */
+#views_slideshow_controls_text_homepage_slideshow-block a:hover {
+	outline:none;
+}
+/* Add a "previous" arrow image. This image path is relative to the path of the css file. in my case, "MyTheme/images/myimage.png". Upload your images in the right place.*/
+#views_slideshow_controls_text_previous_homepage_slideshow-block a , #views_slideshow_controls_text_previous_slideshow-block a {
+	background: url("../images/arrowsmcg.png") no-repeat;
+	position:relative;
+	opacity:.8;
+}
+/* Add a hover effect*/
+#views_slideshow_controls_text_previous_homepage_slideshow-block a:hover, #views_slideshow_controls_text_previous_slideshow-block a:hover {
+	background: url("../images/arrowsmcg.png") 0 100% no-repeat;
+	opacity:1;
+}
+/* hide the "pause" button text*/
+#views_slideshow_controls_text_pause_homepage_slideshow-block a, #views_slideshow_controls_text_pause_slideshow-block a {
+	display: none;
+}
+/* add your "next" arrow image */
+
+#views_slideshow_controls_text_next_homepage_slideshow-block a, #views_slideshow_controls_text_next_slideshow-block a {
+
+	background: url("../images/arrowsmcg.png") 100% 0 no-repeat;
+	opacity:.8;
+	  /*//float:right;    again, use this if you dont mind the non-clickable dead-spot in your slideshow*/
+	position:relative; /* otherwise, use positioning like this*/
+	/* I needed the entire width of the slideshow to remain a clickable region*/
+	left:98%;     /* so that visitors could easily click through to other areas*/
+	
+}
+/* add your "next" hover image */
+#views_slideshow_controls_text_next_homepage_slideshow-block a:hover, #views_slideshow_controls_text_next_slideshow-block a:hover {
+	background: url("../images/arrowsmcg.png") 100% 100% no-repeat;
+	opacity:1;
+
+}
+
+#widget_pager_bottom_homepage_slideshow-block{
+	width:100%;
+	margin:0 auto;
+}
+
+#widget_pager_bottom_homepage_slideshow-block .views-content-field-slider-image {
+	height:21px;
+	width:21px;
+	border:none;
+	background: url("../images/bullet.png") 0 -21px no-repeat;
+	margin:0;
+	padding:0;
+}
+
+#widget_pager_bottom_homepage_slideshow-block .active .views-content-field-slider-image {
+	height:21px;
+	width:21px;
+	background: url("../images/bullet.png")0 0px no-repeat;
+
+}

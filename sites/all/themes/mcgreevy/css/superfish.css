@@ -1,0 +1,52 @@
+h3 .accordion-header  {
+	text-transform: uppercase;
+}
+.left-sidebar.block ul.menu ul {
+	font-weight: normal;
+}
+.left-sidebar .block ul.menu li {
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+}
+.left-sidebar ul.menu li.collapsed:hover, .left-sidebar ul.menu li.collapsed:focus, .left-sidebar ul.menu li.collapsed:active, .left-sidebar .block ul.menu li.expanded {
+	background-color: #fbfbfb;
+}
+.left-sidebar .block ul.menu li.expanded {
+	background: url(../images/arrow-cat.gif) no-repeat 95% 12px;
+}
+.left-sidebar .block ul.menu li.expanded:hover, .block ul.menu li.expanded:focus, .block ul.menu li.expanded:active, .block ul.menu li.expanded.active-trail {
+	background-image: url(../images/arrow-cat-hover.gif);
+}
+.left-sidebar .block ul.menu li.collapsed {
+	background: url(../images/arrow-cat-more.gif) no-repeat 95% 12px;
+}
+.left-sidebar .block ul.menu li.collapsed:hover, .block ul.menu li.collapsed:focus, .block ul.menu li.collapsed:active, .block ul.menu li.collapsed.active-trail {
+	background-image: url(../images/arrow-cat-more-hover.gif);
+}
+.left-sidebar .block ul.menu li a {
+	color: #666;
+	display: block;
+	padding: 10px 0px 10px 30px;
+	background: url(../images/arrow-02.png) no-repeat 18px center;
+	border-bottom: 1px solid #EFEFEF;
+	font-size: 0.85em;
+}
+.left-sidebar .block ul.menu li a:hover, .left-sidebar .block ul.menu li a:focus, .left-sidebar .block ul.menu li a:active {
+	color: #b62d1b;
+	text-decoration: none;
+	background-image: url(../images/arrow-02-active.png);
+}
+.left-sidebar .block ul.menu li a span {
+	color: #666;
+	display: block;
+	padding: 0.25em 0.667em;
+}
+.left-sidebar .block ul.menu li li a {
+	background: url(../images/arrow-02.png) no-repeat 28px center;
+	padding-left: 38px;
+}
+.left-sidebar .block ul.menu li a:hover, .block ul.menu li a:focus, .block ul.menu li a:active {
+	color: #b62d1b;
+}
